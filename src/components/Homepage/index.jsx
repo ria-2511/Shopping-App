@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react';
 import { fetchProductCategories } from '../../apiHooks/dataApi';
-import HomePage from '../Homepage';
-import NavbarElement from '../Navbar/Navbar';
 
-export const MainPage = () => {
+const HomePage = () => {
 
     useEffect(() => {
       fetchProductCategories()
@@ -14,12 +12,10 @@ export const MainPage = () => {
     }, [])
     
     return (
-      <>
         <div>
-          <NavbarElement/>
-          <HomePage/>
+            on the main page
         </div>
-      </>
     )
 }
 
+export default HomePage;
