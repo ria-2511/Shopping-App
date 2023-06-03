@@ -18,7 +18,7 @@ const Icon = ({ iconName = "", showLabel = true }) => {
         width={width}
         height={height}
         fill={fill}
-        class={iconClass}
+        className={iconClass}
         viewBox={viewbox}
       >
         <path d={path} />
