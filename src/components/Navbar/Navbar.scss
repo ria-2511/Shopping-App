@@ -1,0 +1,17 @@
+.Navbar {
+  .Searchbar {
+    position: relative;
+    display: inline-block;
+
+    .SearchField {
+      width: 600px;
+      margin-right: 20px;
+      background-color: #eeeeee;
+      color: white;
+    }
+    .searchIcon {
+      position: absolute;
+      left: 0;
+    }
+  }
+}
