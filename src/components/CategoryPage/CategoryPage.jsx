@@ -1,5 +1,11 @@
+import { useLocation } from "react-router";
+
 const CategoryPage = () => {
-  return <div>This is the Category page</div>;
+  const {state} = useLocation();
+  const {data} = state;
+  console.log(data);
+
+  return <div>`{JSON.stringify(data)}`</div>;
 };
 
 export default CategoryPage;
