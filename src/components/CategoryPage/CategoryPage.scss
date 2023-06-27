@@ -1,0 +1,38 @@
+.MainPage {
+    .mainContainer {
+        margin: 30px;
+        display: flex;
+        flex-direction: row;
+        .categoryClickedHeading{
+            font-weight: bold;
+            font-size: medium;
+            padding-right: 5px;
+        }
+        .filterBtn {
+            text-decoration: underline;
+            cursor: pointer;
+            color: #d71f8b;
+        }
+        .sidebar {
+            height: 100%;
+            display: flex;
+            font-weight: bold;
+            justify-content: flex-start;
+            flex-direction: row;
+            border-radius: 2px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            border-right: 1px solid lightgray;
+            border-top: 1px solid lightgray;
+        }
+        .categoryData {
+            display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            .productMain {
+                padding: 10px;
+                margin: 10px;
+            }
+        }
+    }
+}

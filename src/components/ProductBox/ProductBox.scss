@@ -1,0 +1,45 @@
+.productBox { 
+    width: 400px;
+    height: 400px;    
+    .productImg {
+        max-height: 280px;
+        overflow: hidden;
+    }
+    .productInfo {
+        display: flex;
+        flex-direction: column;
+        .productBrand {
+            font-weight: bold;
+            margin: 0px 4%;
+            padding-bottom: 1%;
+        }
+        .productTitle {
+            font-size: small;
+            margin: 0px 4%;
+            padding-bottom: 2%;
+        }
+        .pricingDetails {
+            .productPrice {
+                font-size: 14px;
+                padding-left: 5px;
+                padding-right: 5px ;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+            .productMrp {
+                font-size: 14px;
+                text-decoration: line-through;
+                color: grey;
+            }
+            .productDiscount {
+                font-size: 14px;
+                padding: 0px 5px;
+                color: red;
+            }
+        }
+    }
+}
+
+.productBox:hover {
+    border: 1px solid lightgray;
+}

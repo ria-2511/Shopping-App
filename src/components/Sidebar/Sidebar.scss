@@ -1,0 +1,20 @@
+.MainList {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom: 1px solid lightgrey;
+    width: 15rem;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    .ListItems {
+        font-style: normal;
+        font-weight: normal;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        .items {
+            padding: 5px;
+            display: block;
+        }
+    }
+}

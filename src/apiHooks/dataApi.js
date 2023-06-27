@@ -5,7 +5,6 @@ export async function fetchProductCategories() {
   try {
     fetch("https://dummyjson.com/products/categories")
       .then((res) => res.json())
-      .then(console.log);
   } catch (error) {
     console.log(error);
   }

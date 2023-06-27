@@ -1,18 +1,16 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Homepage.scss";
 import { categoryImgMapper } from "../../Constants/CategoryImagesMapper";
 import { Card } from "react-bootstrap";
-import CategoryPage from '../CategoryPage/CategoryPage';
 import { useNavigate } from "react-router";
 import { useGetCategoryData } from "../../apiHooks/dataApi";
 
 const HomePage = () => {
   const navigate = useNavigate();
   const [categoryClicked, setCategoryClicked] = useState();
-
   const movePage = (data) => {
     if (categoryClicked && data && !loading) {
-      navigate("/Category", {state : {data}});
+      navigate("/Category", {state : {data,categoryClicked}});
     }
   };
 
@@ -23,7 +21,6 @@ const HomePage = () => {
 
   const handleCategoryClick = (event) => {
     setCategoryClicked(event.target.id);
-    console.log(event.target.id);
   };
 
   useEffect(() => {
